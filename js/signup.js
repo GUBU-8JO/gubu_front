@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/sign-up', {
+      const response = await fetch('https://211.58.24.232/api/auth/sign-up', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       alert('회원가입 성공! 로그인 페이지로 이동합니다.');
-      window.location.href = 'http://127.0.0.1:5500/front/html/signin.html'; // 회원가입 후 로그인 페이지로 리디렉션
+      window.location.href = 'https://gubu-8jo.github.io/gubu_front/html/signin.html'; // 회원가입 후 로그인 페이지로 리디렉션
     } catch (error) {
       alert('회원가입에 실패했습니다. 다시 시도해주세요.');
       console.error('Error:', error);
